@@ -1,0 +1,30 @@
+.square {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.default {
+  background-color: blue;
+}
+
+.default:hover {
+  background-color: #0000a1;
+  cursor: pointer;
+}
+
+.progress {
+  background-color: yellow;
+}
+
+.computer {
+  background-color: red;
+}
+
+.user {
+  background-color: green;
+}

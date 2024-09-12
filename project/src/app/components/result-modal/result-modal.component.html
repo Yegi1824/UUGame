@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Results</h2>
+<div mat-dialog-content>
+  <p *ngIf="oData.bWin"> Congratulations! You Win!</p>
+  <p *ngIf="oData.bWin"> Avarage time per square: {{oData.nAverageSpeed}}ms</p>
+  <p *ngIf="!oData.bWin"> Better luck next time! Computer Win!</p>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">Close</button>
+</div>

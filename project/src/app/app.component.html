@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <div class="wrapper__scoreBoard">
+    <div class="wrapper__scoreBoard__item">
+      <div class="wrapper__scoreBoard__item__player">
+        You
+      </div>
+      <div class="wrapper__scoreBoard__item__score">
+        {{nUserScore}}
+      </div>
+    </div>
+    <div class="wrapper__scoreBoard__item">
+      <div class="wrapper__scoreBoard__item__player">
+        Computer
+      </div>
+      <div class="wrapper__scoreBoard__item__score">
+        {{nComputerScore}}
+      </div>
+    </div>
+  </div>
+  <app-board [nTimePerSquare]="nTimePerSquare"></app-board>
+  <div class="wrapper__controlPanel">
+    <div class="wrapper__controlPanel__btn"
+         [ngClass]="sGameState === 'on' ? 'gameInProcess' : ''"
+         (click)="onStartGame()">
+      Play
+    </div>
+    <input class="wrapper__controlPanel__timerField"
+           type="number"
+           [disabled]="sGameState === 'on'"
+           [value]="sGameState === 'on' ? getTimeLeft() : nTimePerSquare"
+           [(ngModel)]="nTimePerSquare"
+           placeholder="1000ms">
+  </div>
+</div>
+

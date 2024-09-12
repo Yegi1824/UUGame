@@ -1,0 +1,8 @@
+<div class="backdrop" (click)="onClickBackdrop()" *ngIf="bShowBackdrop"></div>
+
+<div class="board">
+  <div class="board__item" *ngFor="let oSquare of aSquares">
+    <app-square [onClickSquare]="onClickSquare" [oSquare]="oSquare"></app-square>
+  </div>
+</div>
+

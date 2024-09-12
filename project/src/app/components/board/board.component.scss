@@ -1,0 +1,29 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 5px;
+  height: 520px;
+  margin: 50px auto;
+
+  &__item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    app-square {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
