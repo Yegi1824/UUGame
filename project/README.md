@@ -1,4 +1,16 @@
-# Project
+# UUGame
+Test assignment
+
+Task: Mini-game.
+A 10x10 grid of squares (blue) is provided, along with a "Start" button, an input field (N - time in milliseconds), and a score line (player/computer).
+
+After pressing the "Start" button:
+
+A random cell on the grid (blue) is highlighted (turns yellow).
+If the player manages to click on the highlighted cell (yellow) within N milliseconds, the cell turns (and remains) green, and the player earns one point.
+If the player fails to click the cell (yellow) within this time, the cell turns (and remains) red, and a point is awarded to the computer.
+If either the player or the computer reaches 10 points, the game ends, and the player should see a message displaying the game results in a popup modal window (do not use the standard alert window), otherwise, the game continues from step one.
+The game should be implemented using: Angular 15+, HTML 5, CSS 3, RxJS (without using ngrx).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 
